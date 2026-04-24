@@ -9,6 +9,7 @@ import GameShowcase from '@/components/GameShowcase'
 import Stats from '@/components/Stats'
 import Footer from '@/components/Footer'
 import CustomCursor from '@/components/CustomCursor'
+import AIChatBot from '@/components/AIChatBot'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <GameShowcase />
       <Stats />
       <Footer />
+      <AIChatBot />
     </main>
   )
 }
