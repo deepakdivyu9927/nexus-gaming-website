@@ -207,6 +207,7 @@ export default function Hero() {
     }> = []
 
     function createTracer() {
+      if (!canvas) return
       if (Math.random() > 0.97) {
         const startSide = Math.random() > 0.5
         tracers.push({
@@ -229,6 +230,7 @@ export default function Hero() {
     }> = []
 
     function createMuzzleFlash() {
+      if (!canvas) return
       if (Math.random() > 0.96) {
         muzzleFlashes.push({
           x: Math.random() * canvas.width,
