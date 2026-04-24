@@ -167,6 +167,7 @@ export default function Hero() {
     }> = []
 
     function createExplosion() {
+      if (!canvas) return
       if (Math.random() > 0.985) {
         const x = Math.random() * canvas.width
         const y = canvas.height * 0.4 + Math.random() * canvas.height * 0.3
